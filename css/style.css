@@ -40,8 +40,8 @@ a:hover {
 } */
 
 .icon img {
-    width: 60px;
-    height: 40px;
+    width: 75px;
+    height: 50px;
     margin: 5px;
 }
 
@@ -292,16 +292,37 @@ span {
 }
 
 .order p {
-    font-family: 'Fredoka', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: #664321;
-    margin: 0;
+    margin: 1px;
 }
 
 .bottom-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+.bottom-item {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0px 20px;
+}
+
+.bottom-box ul li {
+    list-style-type: none;
+    margin: 15px 0px;
+}
+
+.list-head {
+    color: #664321;
+    font-weight: bold;
+    font-size: 20px;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #664321;
+    padding-bottom: 5px;
+    width: max-content;
 }
