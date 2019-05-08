@@ -43,6 +43,7 @@ a:hover {
     border-radius: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    transition: 0.1s;
 }
 
 .items {
@@ -350,15 +351,21 @@ input {
     border: #664321;
     border-radius: 20px;
     width: 300px;
-    padding: 10px;
+    padding: 12px;
 }
 
 input#email {
     background-image: url("../images/send.png");
     background-repeat: no-repeat;
-    background-position: 285px 5px;
+    background-position: 285px 7px;
     background-size: 25px;
     /* opacity: 0.3; */
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+    padding-left: 15px;
 }
 
 .bottom-text {
@@ -489,6 +496,7 @@ input#email {
     height: 300px;
     width: 300px;
     margin: 10px;
+    box-shadow: 1px 1px 8px 6px #d3d3d3;
 }
 
 .circle h1 {
@@ -500,8 +508,13 @@ input#email {
 }
 
 .circle-border {
-    height: 300px;
-    width: 300px;
+    position: absolute;
+    height: 290px;
+    width: 290px;
     border-radius: 50%;
-    border: 2px solid #664321
+    border: 3px solid #664321;
+    /* left: 212px; */
+    z-index: -1;
+    margin: 21px 0px 0px -18px;
+    box-shadow: 1px 1px 8px 6px #d3d3d3;
 }
